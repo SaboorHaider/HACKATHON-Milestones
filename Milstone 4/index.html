@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Customizable Resume Builder</h1>
+
+    <div class="resume-builder-container">
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:*</label>
+                <input type="text" id="name" placeholder="Enter your Name" required contenteditable="true">
+
+                <label for="email">Email:*</label>
+                <input type="email" id="email" placeholder="Enter your gmail" required contenteditable="true">
+
+                <label for="phone">Phone:*</label>
+                <input type="tel" id="phone" placeholder="Enter your number" required pattern="[0-9]{10}"
+                    inputmode="numeric">
+
+
+                <label for="country">Country*</label>
+                <div>
+                    <select name="country" id="country">
+                        <option value="">Select Your Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="India">India</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+
+
+            <fieldset class="form-group">
+                <label for="education">Education*</label>
+                <textarea id="education" rows="4" required placeholder="Enter your education"></textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" rows="4" placeholder="Enter your skills"></textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" rows="4" placeholder="Enter your Work-Experince"></textarea>
+            </fieldset>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="resume-output"></div>
+        <div class="footer">
+            <p>© 2024 savvySaboor | All rights reserved</p>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
