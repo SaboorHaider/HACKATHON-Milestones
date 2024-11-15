@@ -69,6 +69,7 @@ button:hover {
 .resume-output {
     margin-top: 50px;
     padding: 10px;
+    color: white;
     background-color: #2C3333;
     border-radius: 10px;
     display: none;
