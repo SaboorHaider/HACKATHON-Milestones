@@ -66,11 +66,12 @@ button:hover {
     font-size: 22px;
     transition: 0.5s;}
 
+
 .resume-output {
     margin-top: 50px;
-    padding: 20px;
-    color: #E4E4E6;
-    background-color: #444152;
+    padding: 10px;
+    color: antiquewhite;
+    background-color: #2C3333;
     border-radius: 10px;
     display: none;
 }
